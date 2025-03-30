@@ -9,7 +9,8 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/user")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "http://127.0.0.1:5500") // Разрешаем запросы от клиента
+
 public class UserController {
     private final UserRepository userRepository;
 
